@@ -27,6 +27,12 @@ html, body {
     padding: 1%;
 }
 
+.zoom {
+    transition: transform 0.25s;
+}
+.zoom:hover {
+    transform: scale(1.1);
+}
 
 
 /*------COMMONLY USED CLEARFIX IN WEB DESIGN, TO CLEAR FLOATS----*/
@@ -55,7 +61,7 @@ h2 {
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
-    margin-top: 60px;
+    margin-top: 40px;
     font-weight: 300;
 }
 
@@ -231,7 +237,7 @@ span:after {
     font-weight: 500;
     padding: 10px 22px;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 20px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     transition: color 0.25s, background-color 0.25s, border 0.25s, border-radius 0.25s, clip-path 0.25s;
 }
@@ -276,53 +282,17 @@ span:after {
     line-height: 150%;
     
 }
-
 .section-work h3 {margin: 15px 0;}
 .section-work p {text-align: center;}
 
 
-.section-envision-standard{
-    position: relative;
-    background-color: #f0f0f0;
-}
-.section-envision-standard .row {
-    max-width: 100%;
-    margin: 0;
-}
-
-.teamwork {
-    background-image: url("../images/team-work.jpg");
-    background-position: -500px 0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    zoom: 0.9;
-    height: 50vh;
-    clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
-    transition: clip-path 0.22s;
-}
-.teamwork:hover {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-
-}
-
-.learn-more-btn {
-    position: relative;
-    text-align: center;
-    top: 45px;
-
-}
-
-.envision-standard h2,
-.envision-standard h2:after,
-.envision-standard p{
-    text-align: center;
-}
 
 /*----------FITNESS CLASSES SECTION----------*/
 
 .section-fitness-classes{
     position: relative;
     margin: 10px auto;
+    background-color: #f0f0f0;
 }
 .section-fitness-classes img {
     border: 1px solid #cecece;
@@ -363,3 +333,132 @@ span:after {
     top: -90px;
     left: 25px;
 }
+
+
+/*----------Envision Testimonials Section--------*/
+
+
+.section-envision-standard{
+    position: relative;
+    top: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/team-work-min.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.section-envision-standard h2,
+.section-envision-standard h2:after,
+.section-envision-standard p,
+.section-envision-standard cite{
+    text-align: center;
+    color: #fff;
+}
+
+.section-envision-standard img {
+    vertical-align: middle;
+    margin: 0px 5px 20px 0px;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.testimonial-main {
+    font-size: 90%;
+    line-height: 160%;
+    letter-spacing: 1px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10%;
+    
+}
+
+
+/*---------Sign-up Section --------- */
+
+.section-sign-up {
+    background-color: #fff;
+}
+
+.section-sign-up-first-third {
+    background-color: #ff5858;
+    width: 85%;
+    border-radius: 15px;
+    -webkit-box-shadow: 7px 7px 7px #c9c9c9;
+    box-shadow: 7px 7px 7px #c9c9c9;
+    
+}
+
+.section-sign-up-second-third {
+    color: #fff;
+    background-color: #000000;
+    border-top: thin solid rgb(170, 170, 170);
+}
+
+.section-sign-up-third-third {
+    background-color: #ff5858;
+    border-top: thin solid rgb(170, 170, 170);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.section-sign-up h4 {
+    font-size: 140%;
+    padding: 15px;
+    font-weight: 800;
+}
+
+.sign-up-price {
+    display: inline-block;
+    color: rgb(224, 191, 0);
+    font-size: 280%;
+    font-weight: 300;
+    padding-left: 10px;
+
+}
+.sign-up-month {
+    display: inline-block;
+    color: rgb(224, 191, 0);
+    margin-left: 12px;
+    font-size: 100%;
+}
+
+.sign-up-per-meal {
+    margin-top: 15px;
+    font-size: 80%;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.sign-up-list {
+    list-style: none;
+    line-height: 170%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.sign-up-list i {
+    font-size: 70%;
+    color: rgb(212, 183, 16);
+    margin-right: 15px;
+    padding-left: 15px;
+    
+}
+
+.section-sign-up-third-third p {
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+/*-----------CONTACT US SECTION-------------*/
+
+
+
+
+
+
+
+
+/*-----------FOOTER SECTION-------------*/
