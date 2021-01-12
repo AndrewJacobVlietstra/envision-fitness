@@ -1,0 +1,365 @@
+/* -------- BASIC SETUP ---------------*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+/* -------- REUSUABLE COMPONENTS ---------------*/
+.row {
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+
+.col {
+    padding: 1%;
+}
+
+
+
+/*------COMMONLY USED CLEARFIX IN WEB DESIGN, TO CLEAR FLOATS----*/
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* -------- HEADINGS ---------------*/
+h1, h2, h3, h4 {
+    font-family: 'Audiowide', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 180%;
+    word-spacing: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    margin-top: 60px;
+    font-weight: 300;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #df3124;;
+    content: " ";
+    width: 200px;
+    margin: 25px auto 0 auto;
+}
+
+.header-paragraph {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+span {
+    font-family: 'Audiowide', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 180%;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+span:after {
+    display: block;
+    height: 2px;
+    background-color: #fff;;
+    content: " ";
+    width: 200px;
+    margin: 25px auto 0 auto;
+}
+
+
+/*-----------HEADER SECTION---------*/
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.3)), url("../images/landing-page.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+
+.header h1 {
+    color: #fff;
+    position: absolute;
+    width: 1140px;
+    font-size: 400%;
+    line-height: 125%;
+    text-align: center;
+    letter-spacing: 2px;
+
+    /* Keeps this box centered */
+    top: 28%;
+    left: 51%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+}
+
+.header-btn {
+    position: absolute;
+    /* Keeps this box centered */
+    top: 71%;
+    left: 51%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
+}
+
+.second-header {color: #df3124;}
+
+
+
+/* ---------Navigation ----------*/
+.main-nav {
+    position: relative;
+    width: 100%;
+    background-color: #df3124;
+    border-bottom: 1px solid white;
+    height: 70px;
+    padding-bottom: 15px;
+}
+
+.main-nav ul {
+    
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 17px;
+    padding-right: 105px;
+}
+
+.mid-nav-btn{
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 80%; 
+    text-transform: uppercase;
+    
+}
+
+.mid-nav-btn:link,
+.mid-nav-btn:visited {
+    padding-bottom: 10px;
+    border-bottom: solid thin transparent;
+    transition: border 0.22s;
+}
+
+.mid-nav-btn:hover,
+.mid-nav-btn:active {
+    border-bottom: thin solid #fff;
+}
+
+.nav-envision-logo {
+    position: relative;
+    top: 2px;
+    right: 55%;
+    font-family: 'Audiowide', 'Arial', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 160%;
+}
+
+.nav-log-in-btn {
+    position: relative;
+    top: 0px;
+    left: 250%;
+    clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
+}
+
+
+
+
+/*--------BUTTONS----------*/
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    background-color: #fff;
+    color: #df3124;
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 1px;
+    transition: color 0.25s, background-color 0.25s;
+}
+
+.btn:hover,
+.btn:active {
+    color: #fff;
+    background-color: #df3124;
+}
+
+.btn-alt:link,
+.btn-alt:visited {
+    text-decoration: none;
+    background-color: #fff;
+    color: #df3124;
+    font-weight: 500;
+    padding: 10px 22px;
+    border: 1px solid black;
+    border-radius: 10px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition: color 0.25s, background-color 0.25s, border 0.25s, border-radius 0.25s, clip-path 0.25s;
+}
+.btn-alt:hover,
+.btn-alt:active {
+    color: #fff;
+    background-color: #df3124;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+}
+
+
+/* ----------WHY WORK WITH US SECTION-----------*/
+
+.section-why-work-with-us {
+    margin: 30px 0;
+}
+
+.red-banner-heading {
+    text-align: center;
+    padding-top: 40px;
+}
+.red-banner-down-arrow {
+    background-color:#df3124;
+    width: 100%;
+    height: 150px;
+    clip-path: polygon(100% 0, 100% 60%, 50% 100%, 0 60%, 0 0);
+}
+
+.icon-big {
+    font-size: 300%;
+    display: inline-block;
+    color: #df3124;
+    text-align: center;
+}
+
+.section-work {
+    width: 100%;
+    text-align: center;
+    font-size: 90%;
+    line-height: 150%;
+    
+}
+
+.section-work h3 {margin: 15px 0;}
+.section-work p {text-align: center;}
+
+
+.section-envision-standard{
+    position: relative;
+    background-color: #f0f0f0;
+}
+.section-envision-standard .row {
+    max-width: 100%;
+    margin: 0;
+}
+
+.teamwork {
+    background-image: url("../images/team-work.jpg");
+    background-position: -500px 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    zoom: 0.9;
+    height: 50vh;
+    clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
+    transition: clip-path 0.22s;
+}
+.teamwork:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+.learn-more-btn {
+    position: relative;
+    text-align: center;
+    top: 45px;
+
+}
+
+.envision-standard h2,
+.envision-standard h2:after,
+.envision-standard p{
+    text-align: center;
+}
+
+/*----------FITNESS CLASSES SECTION----------*/
+
+.section-fitness-classes{
+    position: relative;
+    margin: 10px auto;
+}
+.section-fitness-classes img {
+    border: 1px solid #cecece;
+    border-radius: 20px;
+}
+
+.cardio img,
+.yoga img,
+.strength img,
+.cycling img {
+    width: 100%;
+    height: auto;
+}
+.yoga img,
+.cycling img {margin-top: 80px;}
+
+.strength,
+.cycling {
+    margin-top: -120px;
+}
+.col1heading {
+    position: relative;
+    top: 60px;
+    left: 60px;
+}
+.col2heading {
+    position: relative;
+    top: 140px;
+    left: 60px;
+}
+.col1paragraph {
+    position: relative;
+    top: -280px;
+    left: 40px;
+}
+.col1btn {
+    position: relative;
+    top: -90px;
+    left: 25px;
+}
