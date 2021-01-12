@@ -106,7 +106,7 @@ span:after {
 /*-----------HEADER SECTION---------*/
 
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.3)), url("../images/landing-page.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.3)), url("../images/landing-page-min.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -295,8 +295,8 @@ span:after {
     background-color: #f0f0f0;
 }
 .section-fitness-classes img {
-    border: 1px solid #cecece;
-    border-radius: 20px;
+    border: 1px solid #b1b1b1;
+    border-radius: 10px;
 }
 
 .cardio img,
@@ -341,16 +341,19 @@ span:after {
 .section-envision-standard{
     position: relative;
     top: 10px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/team-work-min.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("../images/background-image1-min.jpg");
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+.section-envision-standard p {
+    color: #fff;
+    text-align: left;
+}
 
 .section-envision-standard h2,
 .section-envision-standard h2:after,
-.section-envision-standard p,
 .section-envision-standard cite{
     text-align: center;
     color: #fff;
@@ -383,16 +386,16 @@ span:after {
 
 .section-sign-up-first-third {
     background-color: #ff5858;
-    width: 85%;
-    border-radius: 15px;
+    width: 90%;
+    border-radius: 6px;
     -webkit-box-shadow: 7px 7px 7px #c9c9c9;
-    box-shadow: 7px 7px 7px #c9c9c9;
+    box-shadow: 7px 7px 7px #b6b6b6;
     
 }
 
 .section-sign-up-second-third {
     color: #fff;
-    background-color: #000000;
+    background-color: #272727;
     border-top: thin solid rgb(170, 170, 170);
 }
 
