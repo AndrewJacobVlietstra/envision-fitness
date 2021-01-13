@@ -23,27 +23,27 @@
 
 <body>
     
-    <section class="header">
+    <section id="top" class="header">
         <nav class="main-nav">
-            <ul class="nav-middle-list">
+            <ul class="nav-middle-list animate__animated animate__fadeIn">
                 <li><a class="nav-envision-logo" href="#"><em>Envision</em> Fitness</a></li>
                 <li><a class="mid-nav-btn" href="#why-us">Work With Us</a></li>
                 <li><a class="mid-nav-btn" href="#classes">Classes</a></li>
                 <li><a class="mid-nav-btn" href="#customer-testimonial">Testimonials</a></li>
                 <li><a class="mid-nav-btn" href="#sign-up-plan">Join Us</a></li>
-                <li><a class="mid-nav-btn" href="#">Contact Us</a></li>
+                <li><a class="mid-nav-btn" href="#contact-us">Contact Us</a></li>
                 <li><a class="nav-log-in-btn btn" href="#">Log In</a></li> 
             </ul>
         </nav>
-        <h1>FITNESS DRIVEN,<br><strong class="second-header">HEALTH FOCUSED.</strong></h1>
-        <a class="btn header-btn" href="#sign-up-plan">Become A Member Today</a>
+        <h1 class="animate__animated animate__fadeIn">FITNESS DRIVEN,<br><strong class="second-header">HEALTH FOCUSED.</strong></h1>
+        <a class="btn header-btn animate__animated animate__fadeIn" href="#sign-up-plan">Become A Member Today</a>
     </section>
 
     <div class="red-banner-down-arrow">
         <p class="red-banner-heading"><span>Get Inspired, Get Active!</span></p>
     </div>
 
-    <section id="why-us" class="section-why-work-with-us">
+    <section id="why-us" class="section-why-work-with-us wp1">
         <div class="row">
             <h2>Why Work With Us?</h2>
         </div>
@@ -79,7 +79,7 @@
     </section>
 
     <section id="customer-testimonial" class="section-envision-standard">
-        <div class="row">
+        <div class="row wp2">
             <div class="row">
                 <h2>Envision Moments</h2>
             </div>
@@ -106,14 +106,14 @@
             <h2>Fitness Classes</h2>
         </div>
         <div class="row fitness-class-row1">
-                <div class="col span-1-of-2 cardio">
+                <div class="col span-1-of-2 cardio wp3">
                     <h3 class="col1heading">Cardio</h3>
                     <img src="resources/images/cardio-min.jpg">
                     <p class="col1paragraph">Get your heart pumping.</p>
                     <a class="btn-alt col1btn" href="#">Enroll in Class</a>
                 </div>
 
-                <div class="col span-1-of-2 yoga">
+                <div class="col span-1-of-2 yoga wp4">
                     <h3 class="col2heading">Yoga</h3>
                     <img src="resources/images/yoga.jpg">
                     <p class="col1paragraph">Unite mind and body.</p>
@@ -122,13 +122,13 @@
         </div>
 
         <div class="row fitness-class-row2">
-            <div class="col span-1-of-2 strength">
+            <div class="col span-1-of-2 strength wp5">
                 <h3 class="col1heading">Strength</h3>
                 <img src="resources/images/strength.jpg">
                 <p class="col1paragraph">Work those muscles.</p>
                 <a class="btn-alt col1btn" href="#">Enroll in Class</a>
             </div>
-            <div class="col span-1-of-2 cycling">
+            <div class="col span-1-of-2 cycling wp6">
                 <h3 class="col2heading">Cycling</h3>
                 <img src="resources/images/cycling.jpg">
                 <p class="col1paragraph">Let's tone those legs.</p>
@@ -141,7 +141,7 @@
     <section id="sign-up-plan" class="section-sign-up">
         <div class="row"><h2>Start Living Healthy Today</h2></div>
 
-        <div class="row wp4">
+        <div class="row wp7">
             <div class="col span-1-of-3">
                 <div class="section-sign-up-first-third zoom">
                     <h4>Premium</h4>
@@ -196,11 +196,102 @@
     </section>
 
 
-    <section class="section-contact-us"></section>
+    <section id="contact-us" class="section-contact-us">
+        <div class="row">
+            <h2>Reach Out To Us</h2>
+        </div>
+        <div class="header-paragraph">
+            Do you have any questions and/or concerns? Please fill out the information below, submit your questions and we'll get back to you as soon as we can.
+        </div>
+
+        <div class="row">
+            <form method="post" action="#" class="contact-form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="find-us">How did you find us?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="find-us" id="find-us">
+                            <option value="friends" selected>Friends</option>
+                            <option value="Search Engine">Search Engine</option>
+                            <option value="Advertisement">Advertisement</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="news">Subscribe to our Newsletter?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="news" id="news"> <label for="news">Yes</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="message">Drop us a line</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" id="message" placeholder="Your message" cols="30" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
 
 
 
-    <footer></footer>
+    <footer>
+
+        <div class="row footer-links-div">
+            <ul class="footer-links wp8">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">iOS App</a></li>
+                <li><a href="#">Android App</a></li>
+            </ul>
+        </div>
+        <div class="row footer-icons-div">
+            <ul class="footer-icons wp9">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a class="github" href="https://github.com/AndrewJacobVlietstra/gym-project" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="row copyright-statement wp10">
+            Copyright &copy;2021 by Envision Fitness. All Rights Reserved.<br><br>
+            <a class="footerTopLink" href="#top">Back to Top</a>
+        </div>
+
+    </footer>
 
 
 
@@ -212,7 +303,7 @@
 
     <!--Important to load in Jquery first then any libraries AFTER you want to add!-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/jquery.waypoints.min.js"></script>
 
     <!--My custom JS script, added some simple animations to some sections-->
     <script src="resources/js/script.js"></script>
