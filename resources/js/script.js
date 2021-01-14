@@ -95,8 +95,10 @@ $(document).ready(function (){
     });
 
     /* Fitness Classes - Cycling */
+    
     $('.wp6').waypoint(function(direction) {
         $('.wp6').addClass('animate__animated animate__fadeInRight');
+
     }, {
         offset: '50%;'
     });
@@ -130,25 +132,25 @@ $(document).ready(function (){
     });
 
 
-    // /* Mobile Navigation */
-    // $('.js--nav-icon').click(function() {
-    //     var nav = $('.js--main-nav');
-    //     var icon = $('.js--nav-icon i');
+    /* Mobile Navigation */
+    $('.js--nav-icon').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
 
-    //     nav.slideToggle(400);
-    //     if (icon.hasClass('ion-navicon-round')) {
-    //         icon.removeClass('ion-navicon-round');
-    //         icon.addClass('ion-close-round');
+        nav.slideToggle(400);
+        if (icon.hasClass('fas fa-bars')) {
+            icon.removeClass('fas fa-bars');
+            icon.addClass('fas fa-times');
             
-    //     } else {
-    //         icon.removeClass('ion-close-round');
-    //         icon.addClass('ion-navicon-round');
+        } else {
+            icon.removeClass('fas fa-times');
+            icon.addClass('fas fa-bars');
             
 
-    //     }
+        }
 
 
-    // })
+    })
 
 
 });

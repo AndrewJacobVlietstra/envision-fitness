@@ -28,9 +28,13 @@ html, body {
 }
 
 .zoom {
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
     transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
 }
 .zoom:hover {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -106,6 +110,7 @@ span:after {
 /*-----------HEADER SECTION---------*/
 
 .header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.95)), to(rgba(0, 0, 0, 0.3))), url("../images/landing-page-min.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.3)), url("../images/landing-page-min.jpg");
     background-size: cover;
     background-position: center;
@@ -137,6 +142,7 @@ span:after {
     left: 51%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
 }
 
@@ -182,6 +188,7 @@ span:after {
 .mid-nav-btn:visited {
     padding-bottom: 10px;
     border-bottom: solid thin transparent;
+    -webkit-transition: border 0.22s;
     transition: border 0.22s;
 }
 
@@ -204,10 +211,22 @@ span:after {
     position: relative;
     top: 0px;
     left: 250%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
 }
 
+/* Mobile Navigation */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
 
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
 
 
 /*--------BUTTONS----------*/
@@ -220,6 +239,7 @@ span:after {
     font-weight: 500;
     padding: 10px 22px;
     border-radius: 1px;
+    -webkit-transition: color 0.25s, background-color 0.25s;
     transition: color 0.25s, background-color 0.25s;
 }
 
@@ -238,8 +258,12 @@ span:after {
     padding: 10px 22px;
     border: 1px solid black;
     border-radius: 20px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    -webkit-transition: color 0.25s, background-color 0.25s, border 0.25s, border-radius 0.25s, -webkit-clip-path 0.25s;
+    transition: color 0.25s, background-color 0.25s, border 0.25s, border-radius 0.25s, -webkit-clip-path 0.25s;
     transition: color 0.25s, background-color 0.25s, border 0.25s, border-radius 0.25s, clip-path 0.25s;
+    transition: color 0.25s, background-color 0.25s, border 0.25s, border-radius 0.25s, clip-path 0.25s, -webkit-clip-path 0.25s;
 }
 .btn-alt:hover,
 .btn-alt:active {
@@ -247,6 +271,7 @@ span:after {
     background-color: #df3124;
     border: 1px solid transparent;
     border-radius: 0px;
+    -webkit-clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
     clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
 }
 
@@ -265,6 +290,7 @@ span:after {
     background-color:#df3124;
     width: 100%;
     height: 150px;
+    -webkit-clip-path: polygon(100% 0, 100% 60%, 50% 100%, 0 60%, 0 0);
     clip-path: polygon(100% 0, 100% 60%, 50% 100%, 0 60%, 0 0);
 }
 
@@ -330,7 +356,7 @@ span:after {
 }
 .col1btn {
     position: relative;
-    top: -90px;
+    top: -105px;
     left: 25px;
 }
 
@@ -341,6 +367,7 @@ span:after {
 .section-envision-standard{
     position: relative;
     top: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.72)), to(rgba(0, 0, 0, 0.72))), url("../images/background-image1-min.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)), url("../images/background-image1-min.jpg");
     background-size: cover;
     background-position: top center;
@@ -467,6 +494,7 @@ span:after {
 .section-contact-us .btn {
     background-color: #df3124;
     color: #fff;
+    -webkit-transition: border 0.2s, background-color 0.2s, color 0.2s;
     transition: border 0.2s, background-color 0.2s, color 0.2s;
 }
 .section-contact-us .btn:hover {
@@ -506,6 +534,7 @@ input[type="submit"] {
     border-radius: 0%;
     background-color: #fff;
     color: #df3124;
+    -webkit-transition: background-color 0.2s, color 0.2s;
     transition: background-color 0.2s, color 0.2s;
 }
 
@@ -540,6 +569,7 @@ footer {
 .copyright-statement a{
     color: #9c9c9c;
     text-decoration: none;
+    -webkit-transition: color 0.22s;
     transition: color 0.22s;
 }
 
@@ -560,6 +590,7 @@ footer {
 .footer-links li a {
     color: #858585;
     text-decoration: none;
+    -webkit-transition: color 0.22s;
     transition: color 0.22s;
 }
 
