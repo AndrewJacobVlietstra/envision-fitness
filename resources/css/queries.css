@@ -257,7 +257,7 @@
 
     .header {position: relative;}
 
-    .header h1 {font-size:170%;}
+    .header h1 {font-size:160%;}
 
     
 
@@ -287,7 +287,7 @@
     
     .nav-envision-logo {
         position: absolute;
-        top: 27px;
+        top: 25px;
         right: 93%;
         font-size: 105%;
 
