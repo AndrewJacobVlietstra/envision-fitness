@@ -281,7 +281,7 @@
         position: absolute;
         top: 20px;
         left: 70%;
-        font-size: 55%;
+        font-size: 50%;
         
     }
     
@@ -289,7 +289,7 @@
         position: absolute;
         top: 10px;
         right: 93%;
-        font-size: 115%;
+        font-size: 105%;
 
     }
 
@@ -303,7 +303,7 @@
     
     .mobile-nav-icon i {
         position: absolute;
-        top: 8%;
+        top: 10%;
         right: 10px;
         font-size: 200%;
         color: #fff;
