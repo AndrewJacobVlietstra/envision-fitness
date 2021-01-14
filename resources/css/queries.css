@@ -257,7 +257,7 @@
 
     .header {position: relative;}
 
-    .header h1 {font-size:190%;}
+    .header h1 {font-size:170%;}
 
     
 
@@ -279,15 +279,15 @@
 
     .nav-log-in-btn {
         position: absolute;
-        top: 20px;
-        left: 70%;
+        top: 27px;
+        left: 68%;
         font-size: 50%;
         
     }
     
     .nav-envision-logo {
         position: absolute;
-        top: 10px;
+        top: 27px;
         right: 93%;
         font-size: 105%;
 
@@ -315,7 +315,7 @@
     }
 
     .header-btn {
-        font-size: 75%;
+        font-size: 70%;
     }
 
     .header-paragraph {
@@ -343,7 +343,7 @@
 
     .fitness-class-row1 .btn-alt,
     .fitness-class-row2 .btn-alt {
-        font-size: 90%;
+        font-size: 80%;
         padding: 10px 22px;
     }
 
@@ -351,24 +351,24 @@
         position: relative;
         font-size: 130%;
         top: 60px;
-        left: 30px;
+        left: 25px;
     }
     .col2heading {
         position: relative;
         font-size: 130%;
         top: 60px;
-        left: 30px;
+        left: 25px;
     }
     .col1paragraph {
         position: relative;
         font-size: 100%;
-        top: -225px;
-        left: 25px;
+        top: -210px;
+        left: 10px;
     }
     .col1btn {
         position: relative;
         top: -90px;
-        left: 14px;
+        left: 12px;
     }
 
     .header,
