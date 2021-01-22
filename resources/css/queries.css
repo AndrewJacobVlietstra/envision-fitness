@@ -302,12 +302,18 @@
     }
     
     .mobile-nav-icon i {
-        position: absolute;
+        position: fixed;
         top: 10%;
         right: 10px;
         font-size: 200%;
         color: #fff;
+        z-index: 500;
+        background: #333;
+        padding: 10px 13px;
+        border-radius: 50%;
     }
+
+    .sticky {transition: none;}
 
     .red-banner-heading {
         font-size: 72%;

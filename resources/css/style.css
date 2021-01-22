@@ -228,6 +228,14 @@ span:after {
     color: #fff;
 }
 
+.sticky {
+    position: fixed;
+    opacity: 0.95;
+    z-index: 500;
+    background: #333;
+    transition: all 0.5s;
+}
+
 
 /*--------BUTTONS----------*/
 
