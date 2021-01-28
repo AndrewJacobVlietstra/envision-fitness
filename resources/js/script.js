@@ -114,21 +114,21 @@ $(document).ready(function (){
     $('.wp8').waypoint(function(direction) {
         $('.wp8').addClass('animate__animated animate__fadeIn');
     }, {
-        offset: '90%;'
+        offset: '100%;'
     });
 
     /* Footer Icons */
     $('.wp9').waypoint(function(direction) {
         $('.wp9').addClass('animate__animated animate__fadeIn');
     }, {
-        offset: '90%;'
+        offset: '100%;'
     });
 
     /* Copyright Statement */
     $('.wp10').waypoint(function(direction) {
         $('.wp10').addClass('animate__animated animate__fadeIn');
     }, {
-        offset: '90%;'
+        offset: '100%;'
     });
 
 
