@@ -1,4 +1,16 @@
 
+@media only screen and (max-width: 1280px) {
+
+    .nav-envision-logo {
+        right: 0%;
+    }
+
+    .nav-log-in-btn {
+        left: 50%;
+    }
+
+}
+
 
 /* LARGE TABLETS / LAPTOPS to 1200 pixels (widths smaller than the 1140px row) (1024px to 1200px) */
 @media only screen and (max-width: 1200px) {
