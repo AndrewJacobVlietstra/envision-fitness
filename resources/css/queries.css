@@ -1,12 +1,12 @@
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1366px) {
 
     .nav-envision-logo {
-        right: 0%;
+        right: 10%;
     }
 
     .nav-log-in-btn {
-        left: 50%;
+        left: 80%;
     }
 
 }
